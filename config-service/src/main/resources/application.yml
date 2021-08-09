@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    config:
+      service:
+        native:
+          search-locations: classpath:/services
+  profiles:
+    active: native
+  security:
+    user:
+      password: admin
+
+server:
+  port: 8001
